@@ -21,9 +21,8 @@ jobs:
         run: npm test
       # Step 3 - Add tests and linting here
       
-      
   deploy:
-    needs: build
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
