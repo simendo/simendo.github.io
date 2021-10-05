@@ -19,6 +19,8 @@ jobs:
         run: npm ci
       - name: Run tests 
         run: npm test
+      - name: Run typescript lint and format check
+        run: npm run lint:ts
       - name: "Hello world when it's Monday"
         run: echo "Hello $FIRST_NAME, today is Tuesday!"
         env:
