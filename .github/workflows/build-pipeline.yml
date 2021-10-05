@@ -19,6 +19,10 @@ jobs:
         run: npm ci
       - name: Run tests 
         run: npm test
+      - name: "Hello world when it's Monday"
+        run: echo "Hello $FIRST_NAME, today is Tuesday!"
+        env:
+          FIRST_NAME: Simen
         
       # Step 3 - Add tests and linting here
       
