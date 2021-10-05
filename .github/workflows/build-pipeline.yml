@@ -19,6 +19,7 @@ jobs:
         run: npm ci
       - name: Run tests 
         run: npm test
+        
       # Step 3 - Add tests and linting here
       
   deploy:
